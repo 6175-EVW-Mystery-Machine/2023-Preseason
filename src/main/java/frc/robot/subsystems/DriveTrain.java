@@ -41,22 +41,11 @@ public class DriveTrain extends SubsystemBase {
   @Override
   public void periodic() {
 
-    setDefaultCommand(new ArcadeDrive());
+  
   }
-
-  public void setLeftMotors(double speed) {
-
-    motorLeft1.set(-speed);
-    motorLeft2.set(-speed);
-
-  }
-
-  public void setRightMotors(double speed) {
-
-    motorRight1.set(speed);
-    motorRight2.set(speed);
-
-    }
+public void my_TankDriver(double left, double right){
+  m_diffDrive.tankDrive(left, right);
+}
 
   public void startArcadeDrive(double moveSpeed, double rotateSpeed) {
 

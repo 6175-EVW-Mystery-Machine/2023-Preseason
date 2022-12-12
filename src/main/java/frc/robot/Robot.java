@@ -10,9 +10,9 @@ import frc.robot.subsystems.DriveTrain;
 public class Robot extends TimedRobot {
 
   private Command m_autonomousCommand;
-  public static RobotContainer m_robotContainer;
+  private static RobotContainer m_robotContainer;
 
-  public static DriveTrain driveTrain = new DriveTrain();
+ 
 
   
 
@@ -22,7 +22,7 @@ public class Robot extends TimedRobot {
     m_robotContainer = new RobotContainer();
   }
 
-  /
+  
   @Override
   public void robotPeriodic() {
   
